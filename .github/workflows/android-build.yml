@@ -20,14 +20,6 @@ jobs:
         distribution: 'temurin'
         java-version: '17'
 
-    - name: Install Android SDK
-      uses: reactivecircus/android-emulator-runner@v2
-      with:
-        api-level: 33
-        target: google_apis
-        arch: x86_64
-        force-avd-creation: true
-
     - name: Grant execute permission for gradlew
       run: chmod +x ./gradlew
 
@@ -35,7 +27,7 @@ jobs:
       run: ./gradlew assembleDebug
 
     - name: Upload APK
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4   # ✅ updated to v4
       with:
         name: app-debug.apk
         path: app/build/outputs/apk/debug/app-debug.apk
