@@ -1,4 +1,4 @@
-package com.example.simplelinkapp;
+package com.example.app;
 
 import android.os.Bundle;
 import android.webkit.WebSettings;
