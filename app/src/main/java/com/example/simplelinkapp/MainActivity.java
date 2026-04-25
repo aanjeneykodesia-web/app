@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
 
-        webView.loadUrl("https://aa45e057-9d21-41e5-8fc6-86ca91cc3593-00-2zxatot7tv3cv.riker.replit.dev/");
+        webView.loadUrl("https://41a4a9ef-9f20-46c7-a106-eacf5d81d20a-00-1lnwh9lfiizmd.janeway.replit.dev/login");
     }
 
     @Override
